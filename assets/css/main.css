@@ -5415,5 +5415,6 @@ textarea:focus::placeholder {
 
 body {
 background-image: url('/assets/img/bg/page-bg-1.jpg') !important;
+  background-size: cover;
 
 }
