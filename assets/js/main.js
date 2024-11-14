@@ -43,24 +43,7 @@
   var home2bgimg = document.querySelector(".page-wrapper-2");
 
   // Function to toggle the dark theme
-  function toggleDarkTheme() {
-    // Toggle the class on the body element
-    $("body").toggleClass("dark-theme");
 
-    // Store the preference in local storage
-    const isDarkTheme = $("body").hasClass("dark-theme");
-    localStorage.setItem("darkTheme", isDarkTheme);
-
-    if (isDarkTheme) {
-      darktoggle.src = "assets/img/icon/sun-icon.png";
-      home1bgimg.style.backgroundImage =
-        "url('assets/img/bg/page-bg-dark-1.jpg')";
-    } else {
-      darktoggle.src = "assets/img/icon/mon-icon.png";
-      home1bgimg.style.backgroundImage = "url('assets/img/bg/page-bg-1.jpg')";
-      home2bgimg.style.backgroundImage = "url('assets/img/bg/page-bg-1.jpg')";
-    }
-  }
   // Check if the user preference is already stored in local storage
   $(document).ready(function () {
     const isDarkTheme = localStorage.getItem("darkTheme") === "true";
